@@ -1,3 +1,10 @@
+/**
+ * This script defines a football team object and provides functions to display team information and filter player cards.
+ * The team object is frozen to prevent modification.
+ * The player cards are displayed based on the selected option in the dropdown list.
+ * The player cards are filtered based on the selected option in the dropdown list.
+ *
+ */
 /* declare the variables */
 const teamName = document.getElementById("team");
 const typeOfSport = document.getElementById("sport");
@@ -204,7 +211,7 @@ const setPlayerCards = (arr = players) => {
     )
     .join("");
 };
-
+/* Display all the player cards */
 playersDropdownList.addEventListener("change", (e) => {
   playerCards.innerHTML = "";
   switch (e.target.value) {
